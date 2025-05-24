@@ -21,7 +21,7 @@ const Sidebar = ({ patient }) => {
       top: `${topPosition}px`,
       left: '12px',
       width: '264px',
-      height: '48px',
+      height: '40px',
       opacity: 1,
       display: 'flex',
       alignItems: 'center',
@@ -35,8 +35,8 @@ const Sidebar = ({ patient }) => {
           position: 'absolute',
           top: `${topPosition}px`,
           left: '12px',
-          width: '48px',
-          height: '48px',
+          width: '40px',
+          height: '40px',
           background: 'transparent',
           opacity: 1
         }}
@@ -44,16 +44,16 @@ const Sidebar = ({ patient }) => {
       <div style={{
         position: 'absolute',
         top: `${topPosition}px`,
-        left: '72px',
+        left: '64px',
         display: 'flex',
         flexDirection: 'column',
-        gap: '4px'
+        gap: '2px'
       }}>
         <div style={{
           fontFamily: "'Manrope', sans-serif",
           fontWeight: 700,
-          fontSize: '14px',
-          lineHeight: '19px',
+          fontSize: '13px',
+          lineHeight: '17px',
           letterSpacing: '0px',
           color: '#072635',
           textAlign: 'left',
@@ -62,8 +62,8 @@ const Sidebar = ({ patient }) => {
         <div style={{
           fontFamily: "'Manrope', sans-serif",
           fontWeight: 400,
-          fontSize: '14px',
-          lineHeight: '19px',
+          fontSize: '12px',
+          lineHeight: '16px',
           letterSpacing: '0px',
           color: '#707070',
           textAlign: 'left',
@@ -72,9 +72,9 @@ const Sidebar = ({ patient }) => {
       </div>
       <div style={{
         position: 'absolute',
-        top: `${topPosition + 14}px`,
+        top: `${topPosition + 12}px`,
         left: '280px',
-        width: '18px',
+        width: '16px',
         height: '4px',
         background: 'transparent',
         opacity: 1
@@ -98,7 +98,7 @@ const Sidebar = ({ patient }) => {
         top: '122px',
         left: '18px',
         width: '350px',
-        height: '1054px',
+        height: '900px',
         background: '#FFFFFF 0% 0% no-repeat padding-box',
         borderRadius: '16px',
         opacity: 1,
@@ -120,7 +120,7 @@ const Sidebar = ({ patient }) => {
         top: '180px',
         left: '344px',
         width: '6px',
-        height: '874px',
+        height: '670px',
         background: '#E3E4E6 0% 0% no-repeat padding-box',
         borderRadius: '3px',
         opacity: 1
@@ -161,21 +161,27 @@ const Sidebar = ({ patient }) => {
         />
       </div>
 
-      {additionalPatients.map((p, index) => (
-        <PatientBox 
-          key={p.name} 
-          patient={p} 
-          topPosition={40 + (index * 45)} 
-          isLast={false}
-        />
-      ))}
-      
+      {/* Additional patients */}
+      {additionalPatients.map((p, index) => {
+        // Skip the first 3 cards for Jessica Taylor's position
+        const adjustedIndex = index >= 3 ? index + 1 : index;
+        return (
+          <PatientBox 
+            key={p.name} 
+            patient={p} 
+            topPosition={40 + (adjustedIndex * 35)} 
+            isLast={false}
+          />
+        );
+      })}
+
+      {/* Jessica Taylor's card with green background */}
       <div style={{
         position: 'absolute',
-        top: '340px',
+        top: '270px',
         left: '0px',
-        width: '344px',
-        height: '80px',
+        width: '338px',
+        height: '75px',
         background: '#D8FCF7 0% 0% no-repeat padding-box',
         opacity: 1,
         zIndex: 0
@@ -183,7 +189,7 @@ const Sidebar = ({ patient }) => {
       
       <div style={{
         position: 'absolute',
-        top: '356px',
+        top: '286px',
         left: '12px',
         width: '264px',
         height: '48px',
@@ -196,8 +202,8 @@ const Sidebar = ({ patient }) => {
         <div style={{
           position: 'absolute',
           top: '14px',
-          left: '268px',
-          width: '18px',
+          left: '280px',
+          width: '16px',
           height: '4px',
           background: 'transparent',
           opacity: 1
@@ -218,8 +224,8 @@ const Sidebar = ({ patient }) => {
             position: 'absolute',
             top: '0px',
             left: '12px',
-            width: '48px',
-            height: '48px',
+            width: '40px',
+            height: '40px',
             background: 'transparent',
             opacity: 1
           }}
@@ -227,7 +233,7 @@ const Sidebar = ({ patient }) => {
         <div style={{
           position: 'absolute',
           top: '0px',
-          left: '72px',
+          left: '64px',
           display: 'flex',
           flexDirection: 'column',
           gap: '4px'
@@ -235,8 +241,8 @@ const Sidebar = ({ patient }) => {
           <div style={{
             fontFamily: "'Manrope', sans-serif",
             fontWeight: 700,
-            fontSize: '14px',
-            lineHeight: '19px',
+            fontSize: '13px',
+            lineHeight: '17px',
             letterSpacing: '0px',
             color: '#072635',
             textAlign: 'left',
@@ -245,8 +251,8 @@ const Sidebar = ({ patient }) => {
           <div style={{
             fontFamily: "'Manrope', sans-serif",
             fontWeight: 400,
-            fontSize: '14px',
-            lineHeight: '19px',
+            fontSize: '12px',
+            lineHeight: '16px',
             letterSpacing: '0px',
             color: '#707070',
             textAlign: 'left',

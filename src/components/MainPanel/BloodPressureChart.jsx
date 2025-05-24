@@ -156,7 +156,7 @@ const BloodPressureChart = ({ vitalSigns }) => {
       background: '#f4f0ff', 
       borderRadius: '12px', 
       padding: '1rem 0.5rem 0.5rem 0.25rem',
-      maxHeight: '350px',
+      maxHeight: '260px',
       marginLeft: '-0.5rem',
       width: '102%',
       position: 'relative'
@@ -207,7 +207,7 @@ const BloodPressureChart = ({ vitalSigns }) => {
           />
         </div>
       </div>
-      <div style={{ height: '250px', width: '65%', margin: '0 0 0 0.5rem' }}>
+      <div style={{ height: '210px', width: '65%', margin: '0 0 0 0.5rem' }}>
         <Line data={data} options={{
           ...options,
           plugins: {

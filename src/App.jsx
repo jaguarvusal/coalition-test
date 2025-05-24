@@ -32,15 +32,17 @@ const App = () => {
       display: 'flex',
       overflow: 'auto'
     }}>
-      <Navbar />
-      <Sidebar patient={patient} />
-      <main style={{ flex: 1, padding: '2rem' }}>
-        <MainPanel patient={patient} />
-      </main>
-      <aside style={{ width: '300px', padding: '2rem', background: '#f9f9f9' }}>
-        <PatientInfo patient={patient} />
-        <LabResults patient={patient} />
-      </aside>
+      <div style={{ minHeight: '155vh', width: '100%', display: 'flex' }}>
+        <Navbar />
+        <Sidebar patient={patient} />
+        <main style={{ flex: 1, padding: '2rem' }}>
+          <MainPanel patient={patient} />
+        </main>
+        <aside style={{ width: '300px', padding: '2rem', background: '#f9f9f9' }}>
+          <PatientInfo patient={patient} />
+          <LabResults patient={patient} />
+        </aside>
+      </div>
     </div>
   );
 };

@@ -10,146 +10,146 @@ const VitalsSummary = ({ vitalSigns }) => {
     <div style={{ display: 'flex', gap: '1rem' }}>
       <div style={{ 
         position: 'absolute',
-        top: '530px',
-        left: '437px',
-        width: '210px',
-        height: '230px',
+        top: '485px',
+        left: '427px',
+        width: '195px',
+        height: '190px',
         background: '#E0F3FA 0% 0% no-repeat padding-box',
         borderRadius: '12px',
         opacity: 1,
-        padding: '1rem 0 0 1rem',
+        padding: '0.75rem 0 0 0.75rem',
         textAlign: 'center'
       }}>
         <img 
           src="/src/img/respiratory rate.svg" 
           alt="Respiratory Rate"
           style={{
-            width: '96px',
-            height: '96px',
-            marginBottom: '0.5rem',
-            marginLeft: '-7rem'
+            width: '85px',
+            height: '85px',
+            marginBottom: '0.25rem',
+            marginLeft: '-6rem'
           }}
         />
         <h4 style={{
           fontFamily: "'Manrope', sans-serif",
           fontWeight: 500,
-          fontSize: '16px',
+          fontSize: '14px',
           textAlign: 'left',
           marginLeft: '0rem',
-          marginTop: '0.5rem'
+          marginTop: '0.25rem'
         }}>Respiratory Rate</h4>
         <p style={{ 
-          fontSize: '30px', 
+          fontSize: '24px', 
           fontFamily: "'Manrope', sans-serif",
           fontWeight: 800,
           marginLeft: '0rem',
           textAlign: 'left',
-          marginTop: '-1rem'
+          marginTop: '-0.75rem'
         }}>{respiratoryRate} bpm</p>
         <p style={{ 
           fontFamily: "'Manrope', sans-serif",
           fontWeight: 400,
-          fontSize: '14px',
+          fontSize: '12px',
           color: '#072635',
           textAlign: 'left',
           marginLeft: '0rem',
-          marginTop: '-0.75rem'
+          marginTop: '-1rem'
         }}>Normal</p>
       </div>
       <div style={{ 
         position: 'absolute',
-        top: '530px',
-        left: '687px',
-        width: '210px',
-        height: '230px',
+        top: '485px',
+        left: '677px',
+        width: '195px',
+        height: '190px',
         background: '#FFE6E9 0% 0% no-repeat padding-box',
         borderRadius: '12px',
         opacity: 1,
-        padding: '1rem 0 0 1rem',
+        padding: '0.75rem 0 0 0.75rem',
         textAlign: 'center'
       }}>
         <img 
           src="/src/img/temperature.svg" 
           alt="Temperature"
           style={{
-            width: '96px',
-            height: '96px',
-            marginBottom: '0.5rem',
-            marginLeft: '-7rem'
+            width: '85px',
+            height: '85px',
+            marginBottom: '0.25rem',
+            marginLeft: '-6rem'
           }}
         />
         <h4 style={{
           fontFamily: "'Manrope', sans-serif",
           fontWeight: 500,
-          fontSize: '16px',
+          fontSize: '14px',
           textAlign: 'left',
           marginLeft: '0rem',
-          marginTop: '0.5rem'
+          marginTop: '0.25rem'
         }}>Temperature</h4>
         <p style={{ 
-          fontSize: '30px', 
+          fontSize: '24px', 
           fontFamily: "'Manrope', sans-serif",
           fontWeight: 800,
           marginLeft: '0rem',
           textAlign: 'left',
-          marginTop: '-1rem'
+          marginTop: '-0.75rem'
         }}>{temperature}°F</p>
         <p style={{ 
           fontFamily: "'Manrope', sans-serif",
           fontWeight: 400,
-          fontSize: '14px',
+          fontSize: '12px',
           color: '#072635',
           textAlign: 'left',
           marginLeft: '0rem',
-          marginTop: '-0.75rem'
+          marginTop: '-1rem'
         }}>Normal</p>
       </div>
       <div style={{ 
         position: 'absolute',
-        top: '530px',
-        left: '937px',
-        width: '210px',
-        height: '230px',
+        top: '485px',
+        left: '927px',
+        width: '195px',
+        height: '190px',
         background: '#FFE6F1 0% 0% no-repeat padding-box',
         borderRadius: '12px',
         opacity: 1,
-        padding: '1rem 0 0 1rem',
+        padding: '0.75rem 0 0 0.75rem',
         textAlign: 'center'
       }}>
         <img 
           src="/src/img/HeartBPM.png" 
           alt="Heart Rate"
           style={{
-            width: '96px',
-            height: '96px',
-            marginBottom: '0.5rem',
-            marginLeft: '-7rem'
+            width: '85px',
+            height: '85px',
+            marginBottom: '0.25rem',
+            marginLeft: '-6rem'
           }}
         />
         <h4 style={{
           fontFamily: "'Manrope', sans-serif",
           fontWeight: 500,
-          fontSize: '16px',
+          fontSize: '14px',
           textAlign: 'left',
           marginLeft: '0rem',
-          marginTop: '0.5rem'
+          marginTop: '0.25rem'
         }}>Heart Rate</h4>
         <p style={{ 
-          fontSize: '30px', 
+          fontSize: '24px', 
           fontFamily: "'Manrope', sans-serif",
           fontWeight: 800,
           marginLeft: '0rem',
           textAlign: 'left',
-          marginTop: '-1rem'
+          marginTop: '-0.75rem'
         }}>{heartRate} bpm</p>
         <p style={{ 
           fontFamily: "'Manrope', sans-serif",
           fontWeight: 400,
-          fontSize: '14px',
+          fontSize: '12px',
           color: '#072635',
           textAlign: 'left',
           marginLeft: '0rem',
-          marginTop: '-0.75rem',
+          marginTop: '-1rem',
           display: 'flex',
           alignItems: 'center',
           gap: '4px'
@@ -158,8 +158,8 @@ const VitalsSummary = ({ vitalSigns }) => {
             src="/src/img/ArrowDown.svg" 
             alt="arrow down"
             style={{
-              width: '10px',
-              height: '5px'
+              width: '8px',
+              height: '4px'
             }}
           />
           Lower than Average

@@ -9,9 +9,9 @@ const MainPanel = ({ patient }) => {
       <section style={{ 
         position: 'absolute',
         top: '122px',
-        left: '417px',
-        width: '700px',
-        height: '600px',
+        left: '407px',
+        width: '680px',
+        height: '520px',
         background: '#FFFFFF 0% 0% no-repeat padding-box',
         borderRadius: '16px',
         opacity: 1,
@@ -22,7 +22,7 @@ const MainPanel = ({ patient }) => {
           fontWeight: 800,
           fontSize: '24px',
           marginBottom: '1rem',
-          marginTop: '-0.5rem',
+          marginTop: '-1rem',
           marginLeft: '-0.5rem'
         }}>Diagnosis History</h2>
         <BloodPressureChart vitalSigns={patient.diagnosis_history} />

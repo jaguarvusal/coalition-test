@@ -14,23 +14,23 @@ const Navbar = () => {
       position: 'absolute',
       top: '18px',
       left: '18px',
-      width: '1400px',
-      height: '60px',
+      width: '1350px',
+      height: '64px',
       background: '#FFFFFF 0% 0% no-repeat padding-box',
-      borderRadius: '60px',
+      borderRadius: '48px',
       opacity: 1,
       display: 'flex',
       alignItems: 'center',
-      padding: '0 72px',
+      padding: '0 25px',
       justifyContent: 'space-between'
     }}>
       <img 
         src="/src/img/TestLogo.svg" 
         alt="Test Logo"
         style={{
-          height: '40px',
+          height: '48px',
           width: 'auto',
-          marginLeft: '-40px'
+          marginLeft: '0px'
         }}
       />
 
@@ -39,7 +39,7 @@ const Navbar = () => {
         gap: '32px',
         alignItems: 'center',
         position: 'absolute',
-        right: '350px'
+        right: '300px'
       }}>
         {navItems.map((item) => (
           <button
@@ -47,15 +47,15 @@ const Navbar = () => {
             style={{
               display: 'flex',
               alignItems: 'center',
-              gap: '8px',
+              gap: '6px',
               background: item.text === 'Patients' ? '#01F0D0' : 'transparent',
               border: 'none',
               cursor: 'pointer',
-              padding: '8px 16px',
+              padding: '6px 12px',
               borderRadius: item.text === 'Patients' ? '41px' : '8px',
               fontFamily: "'Manrope', sans-serif",
               fontWeight: 500,
-              fontSize: '14px',
+              fontSize: '13px',
               color: '#072635',
               transition: 'background-color 0.2s'
             }}
@@ -74,8 +74,8 @@ const Navbar = () => {
               src={item.icon} 
               alt={item.text}
               style={{
-                width: '20px',
-                height: '20px'
+                width: '18px',
+                height: '18px'
               }}
             />
             {item.text}
@@ -94,32 +94,32 @@ const Navbar = () => {
           src="/src/img/senior-woman-doctor-and-portrait-smile-for-health-2023-11-27-05-18-16-utc.png" 
           alt="Dr. Jose Simmons"
           style={{
-            width: '40px',
-            height: '40px',
+            width: '36px',
+            height: '36px',
             borderRadius: '50%'
           }}
         />
         <div style={{
           display: 'flex',
           flexDirection: 'column',
-          gap: '1px'
+          gap: '0px'
         }}>
           <div style={{
             fontFamily: "'Manrope', sans-serif",
             fontWeight: 510,
-            fontSize: '14px',
+            fontSize: '12px',
             color: '#072635'
           }}>Dr. Jose Simmons</div>
           <div style={{
             fontFamily: "'Manrope', sans-serif",
             fontWeight: 400,
-            fontSize: '14px',
+            fontSize: '11px',
             color: '#707070'
           }}>General Practitioner</div>
         </div>
         <div style={{
           width: '1px',
-          height: '44px',
+          height: '28px',
           background: '#EDEDED',
           opacity: 1,
           margin: '0 4px'
@@ -128,8 +128,8 @@ const Navbar = () => {
           src="/src/img/settings_FILL0_wght300_GRAD0_opsz24.svg" 
           alt="Settings"
           style={{
-            width: '20px',
-            height: '20px',
+            width: '16px',
+            height: '16px',
             cursor: 'pointer'
           }}
         />
@@ -137,8 +137,8 @@ const Navbar = () => {
           src="/src/img/more_vert_FILL0_wght300_GRAD0_opsz24.svg" 
           alt="More options"
           style={{
-            width: '20px',
-            height: '20px',
+            width: '16px',
+            height: '16px',
             cursor: 'pointer'
           }}
         />

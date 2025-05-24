@@ -1,10 +1,13 @@
 import React from 'react';
 
 const PatientInfo = ({ patient }) => {
-  const infoItem = (label, value) => (
-    <div style={{ marginBottom: '0.75rem' }}>
-      <div style={{ fontSize: '0.85rem', color: '#888' }}>{label}</div>
-      <div style={{ fontWeight: '500', fontSize: '1rem' }}>{value}</div>
+  const infoItem = (label, value, icon) => (
+    <div style={{ marginBottom: '1.75rem', display: 'flex', alignItems: 'center', gap: '8px' }}>
+      {icon && <img src={icon} alt={label} style={{ width: '38px', height: '38px', marginLeft: '-12px' }} />}
+      <div>
+        <div style={{ fontFamily: "'Manrope', sans-serif", fontWeight: 400, fontSize: '12px', color: '#888' }}>{label}</div>
+        <div style={{ fontFamily: "'Manrope', sans-serif", fontWeight: 700, fontSize: '12px' }}>{value}</div>
+      </div>
     </div>
   );
 
@@ -13,9 +16,9 @@ const PatientInfo = ({ patient }) => {
       style={{
         position: 'absolute',
         top: '108px',
-        left: '1216px',
-        width: '367px',
-        height: '740px',
+        left: '1176px',
+        width: '187px',
+        height: '600px',
         background: '#FFFFFF 0% 0% no-repeat padding-box',
         borderRadius: '16px',
         opacity: 1,
@@ -24,31 +27,39 @@ const PatientInfo = ({ patient }) => {
       }}
     >
       <img
-        src={patient.profile_picture}
+        src="/src/img/Layer 2@2x.png"
         alt={patient.name}
-        style={{ width: '80px', height: '80px', borderRadius: '50%', marginBottom: '1rem' }}
+        style={{ width: '150px', height: '150px', borderRadius: '50%', marginBottom: '0.5rem' }}
       />
-      <h3 style={{ fontSize: '1.25rem', fontWeight: '600' }}>{patient.name}</h3>
-      <p style={{ fontSize: '0.9rem', color: '#777' }}>{patient.age} years old</p>
+      <h3 style={{ 
+        fontFamily: "'Manrope', sans-serif",
+        fontWeight: 800,
+        fontSize: '24px',
+        marginBottom: '0.25rem',
+        marginTop: '0'
+      }}>{patient.name}</h3>
 
-      <div style={{ marginTop: '1.5rem', textAlign: 'left' }}>
-        {infoItem('Date of Birth', patient.date_of_birth)}
-        {infoItem('Gender', patient.gender)}
-        {infoItem('Phone Number', patient.phone_number)}
-        {infoItem('Emergency Contact', patient.emergency_contact)}
-        {infoItem('Insurance Type', patient.insurance_type)}
+      <div style={{ marginTop: '2.5rem', textAlign: 'left' }}>
+        {infoItem('Date of Birth', patient.date_of_birth, '/src/img/BirthIcon.svg')}
+        {infoItem('Gender', patient.gender, '/src/img/FemaleIcon.svg')}
+        {infoItem('Phone Number', patient.phone_number, '/src/img/PhoneIcon.svg')}
+        {infoItem('Emergency Contact', patient.emergency_contact, '/src/img/PhoneIcon.svg')}
+        {infoItem('Insurance Type', patient.insurance_type, '/src/img/InsuranceIcon.svg')}
       </div>
 
       <button
         style={{
-          marginTop: '1rem',
+          marginTop: '0.25rem',
           padding: '0.5rem 1rem',
-          borderRadius: '8px',
+          borderRadius: '41px',
           border: 'none',
-          background: '#7879f1',
-          color: '#fff',
-          fontWeight: '500',
+          background: '#01F0D0',
+          color: '#072635',
+          fontFamily: "'Manrope', sans-serif",
+          fontWeight: 700,
+          fontSize: '14px',
           cursor: 'pointer',
+          width: '100%'
         }}
       >
         Show All Information
